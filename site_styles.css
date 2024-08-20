@@ -1,0 +1,262 @@
+/*
+  Author: Kelley Castillo
+  Date:08/19/2024
+  File:site_styles.css
+ */
+main{
+    margin-left:100px;
+    margin-right:100px;
+}
+body{
+    background-image:url("bg.jpg");
+}
+
+/* top of page */
+header{
+    background-color:rgba(0,0,0,0.60);
+    margin:10px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    background-position:center;
+    font-family:Verdana,Geneva, sans-serif;
+}
+/*color of title */
+h1{
+    color: white;
+    font-family:"Courier New";
+}
+/* the main page and body */
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size:25px;
+}
+/* links to home, resume, projects, contacts */
+nav ul li{
+    background:linear-gradient(to right,#0f1b29, transparent);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom:10px;
+}
+/* color of links of top of homepage */
+nav ul a{
+    color:#e0e1dd;
+}
+/*sections for each links */
+section {
+    border: 2px solid #0f1b29;
+    padding:20px;
+    color:black;
+}
+/*color for homepage, resume, projects, and contacts */
+h2{
+    font-size:45px;
+    color:#0f1b29;
+}
+p{
+    font-size:30px;
+}
+/*stylization for home section */
+#home{
+    background-color:#7b8ca6;
+    text-align:center;
+}
+img{
+    width:300px;
+    height:auto;
+}
+
+
+/*stylization for resume section */
+#resume{
+    background-color: #7b8ca6;
+    height:1200px;
+}
+/* stylization for resume description */
+/* p{
+    color:white;
+    font-size:30px;
+}
+/* stylization for resume skill titles*/
+ /* h1.resume{
+    font-size:45px;
+    font-style:oblique;
+}
+  */
+.grid-container {
+    text-align:center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color:black;
+width: 100%;
+max-width: 1300px;
+}
+
+.box {
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50;
+    color: black;
+    font-size: 40px;
+    height: 200px;
+    width:100%;
+    border-radius: 5px;
+
+}
+
+.box1 {
+    background-color: #415a76;
+    align-items: center;
+}
+
+.box2 {
+    background-color: #e0e1dd;
+    align-items: center;
+}
+.box3 {
+    background-color: #415a76;
+    align-items: center;
+}
+.box4 {
+    margin-bottom:800px;
+    background-color: #e0e1dd;
+    align-items: center;
+}
+
+/*stylization for project section */
+#projects{
+    background-color:#7b8ca6;
+}
+h3{
+    font-size:30px;
+    font-style:italic;
+    text-decoration:underline;
+}
+/* project 1 */
+.project1{
+    height:auto;
+}
+.project1 img{
+    width:800px;
+    height:500px;
+}
+
+.project2{
+    height:auto;
+}
+.project2 img{
+    width:800px;
+    height:500px;
+}
+
+.project3{
+    width:auto;
+}
+.project3 img{
+    height:500px;
+    width:800px;
+}
+
+
+/*stylization for contacts section */
+#contacts{
+    background-color:#465974;
+    text-align:center;
+}
+#contacts p{
+    color:#1d263a;
+}
+
+/*stylization for footer section */
+footer{
+    background-color:#7b8ca6;
+    padding:10px;
+    text-align:center;
+    font-size:0.8em;
+}
+
+/* styles for tablets */
+@media screen and (min-width:480px){
+    section#sheet div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:10px;
+    }
+    header img{
+        width:50%;
+        margin: 0 auto;
+    }
+    p{
+        margin-left:50px;
+    }
+}
+/* styles for mobile devices */
+@media screen and (max-width: 480px) {
+    h1{
+        background-color: #e0e1dd;
+        text-align:center;
+    }
+    p{
+        padding:5px;
+        text-align:justify;
+    }
+    img.size2, img.size3 {
+        display:none;
+    }
+}
+
+/* DELETED OR UNUSED CODE */
+/*
+<section id="resume">
+    <h2>Resume:</h2>
+    <p>Although my skills are quite lacking in terms of work experience and
+      technology skills, I am willing to learn and communicate through training
+      and multitasking. Some skills that I am most knowledgeable are:</p>
+    <div class="flex-container">
+      <div class="Office 365">Office 365</div>
+      <div class="Java">Java</div>
+      <div class="HTML & CSS">HTML & CSS</div>
+      <div class="Power BI">Power BI</div>
+      <div class="Basic Windows Assistance">Basic Windows assistance</div>
+      <div class="Building & Cleaning PCs">Building & Cleaning PCs.</div>
+    </div>
+  </section> */
+
+/*
+<section id="resume">
+    <p>Although my skills are quite lacking in terms of work experience and
+      technology skills, I am willing to learn and communicate through training
+      and multitasking. Some skills that I am most knowledgeable are:</p>
+    <div>
+      <h1>Office 365</h1>
+      <p> I am fully capable of using and teaching the use of the applications
+      like OneNote, Outlook, Teams, Word, PowerPoint, Excel, and other
+      Microsoft applications upon request.</p>
+    </div>
+      <div>
+        <h1>Java</h1>
+        <p>After taking two Java courses in my career path, although I am
+        not fully capable of handling advanced Java projects, I can
+        help implement and look over any Java code for feedback or
+        explanation. </p>
+      </div>
+      <div>
+        <h1>HTML & CSS</h1>
+        <p>As of July 2024 to end of December 2024, I am continuing to learn
+        about HTML and CSS, however, if you feel like my creation of this website
+        is nice and formatted correctly enough, then I am more than capable
+        to build a website for any company.</p>
+      </div>
+      <div>
+        <h1>Building & Cleaning PCs</h1>
+        <p>I am very passionate about computers, especially what components
+        are in each and every computer. From Macs to PCs, I can build and clean your
+        device.</p>
+      </div>
+  </section>
+ */
