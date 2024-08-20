@@ -72,7 +72,6 @@ img{
 /*stylization for resume section */
 #resume{
     background-color: #7b8ca6;
-    text-align:center;
     height:1200px;
 }
 /* stylization for resume description */
@@ -87,7 +86,6 @@ img{
 }
   */
 .grid-container {
-    margin-left:600px;
     text-align:center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
